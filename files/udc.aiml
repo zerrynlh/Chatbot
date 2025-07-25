@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+   <category>
+        <pattern>*</pattern>
+        <template>I'm not sure I understand you. Please try again.</template>
+    </category>
+</aiml>

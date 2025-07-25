@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+        <pattern>HELLO</pattern>
+        <template>Hello! I'm your computer science career advisor bot! Please select an option.
+            <button>
+                <text>What are the top 5 careers for computer science majors?</text>
+                <postback>All Careers</postback>
+            </button>
+            <button>
+                <text>I'm unsure. Help me figure it out.</text>
+                <postback>Quiz me</postback>
+            </button>    
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HI</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HEY</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>All Careers</pattern>
+        <template>Here's a list of the top computer science careers:
+        <br></br>
+        <br></br>
+            <link>
+                <text> Click here to learn about being a Cybersecurity Analyst.</text>
+                <url>https://www.coursera.org/articles/cybersecurity-analyst-job-guide</url>
+            </link>
+        <br></br>
+            <link>
+                <text> Click here to learn about being a Network Administrator.</text>
+                <url>https://www.coursera.org/articles/what-is-a-network-administrator-a-career-guide</url>
+            </link>
+        <br></br>
+            <link>
+                <text> Click here to learn about being a Data Analyst.</text>
+                <url>https://www.coursera.org/articles/what-does-a-data-analyst-do-a-career-guide</url>
+            </link>
+        <br></br>
+            <link>
+                <text> Click here to learn about being a Software Engineer.</text>
+                <url>https://www.coursera.org/articles/software-engineer</url>
+            </link>
+        <br></br>
+            <link>
+                <text> Click here to learn about being a Frontend Developer.</text>
+                <url>https://www.coursera.org/articles/front-end-developer</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Quiz me</pattern>
+        <template>Do you enjoy conducting analysis?
+            <button>
+                <text>Yes</text>
+                <postback>cadana</postback>
+            </button>
+            <button>
+                <text>Not really</text>
+                <postback>sefd</postback>
+            </button>    
+        </template>
+    </category>
+    
+    <category>
+        <pattern>sefd</pattern>
+        <template>Do you enjoy developing systems with tools like Java/C++?
+            <button>
+                <text>Yes</text>
+                <postback>se</postback>
+            </button>
+            <button>
+                <text>Nope</text>
+                <postback>fd</postback>
+            </button>    
+        </template>
+    </category>
+    
+    <category>
+        <pattern>fd</pattern>
+        <template>You might like being a frontend developer!
+            <link>
+                <text>Learn about being a Frontend Developer.</text>
+                <url>https://www.coursera.org/articles/front-end-developer</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>se</pattern>
+        <template>You might enjoy being a software engineer!
+            <link>
+                <text>Learn about being a Software Engineer.</text>
+                <url>https://www.coursera.org/articles/software-engineer</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>cadana</pattern>
+        <template>Are you knowledgeable in about computer networks?
+            <button>
+                <text>Yes</text>
+                <postback>naca</postback>
+            </button>
+            <button>
+                <text>Nope</text>
+                <postback>da</postback>
+            </button>    
+        </template>
+    </category>
+    
+    <category>
+        <pattern>da</pattern>
+        <template>You might enjoy being a data analyst!
+            <link>
+                <text>Learn about being a Data Analyst.</text>
+                <url>https://www.coursera.org/articles/what-does-a-data-analyst-do-a-career-guide</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>naca</pattern>
+        <template>Do you prefer maintaining network hardware/software over conducting threat research?
+            <button>
+                <text>Yes</text>
+                <postback>na</postback>
+            </button>
+            <button>
+                <text>Nope</text>
+                <postback>ca</postback>
+            </button>    
+        </template>
+    </category>
+    
+    <category>
+        <pattern>na</pattern>
+        <template>You might enjoy being a network administrator!
+            <link>
+                <text>Learn about being a Network Administrator.</text>
+                <url>https://www.coursera.org/articles/what-is-a-network-administrator-a-career-guide</url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>ca</pattern>
+        <template>You might enjoy being a cybersecurity analyst!
+            <link>
+                <text>Learn about being a Cybersecurity Analyst.</text>
+                <url>https://www.coursera.org/articles/cybersecurity-analyst-job-guide</url>
+            </link>
+        </template>
+    </category>
+    
+</aiml>
